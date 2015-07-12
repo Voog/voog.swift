@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38DB89FB1B527ADA000DC732 /* Voog.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DB89FA1B527ADA000DC732 /* Voog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38DB8A021B527ADA000DC732 /* Voog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB89F71B527ADA000DC732 /* Voog.framework */; };
+		38DB8A071B527ADA000DC732 /* VoogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB8A061B527ADA000DC732 /* VoogTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38DB8A031B527ADA000DC732 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38DB89EE1B527ADA000DC732 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38DB89F61B527ADA000DC732;
+			remoteInfo = Voog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38DB89F71B527ADA000DC732 /* Voog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38DB89FA1B527ADA000DC732 /* Voog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voog.h; sourceTree = "<group>"; };
+		38DB89FC1B527ADA000DC732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DB8A011B527ADA000DC732 /* VoogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38DB8A061B527ADA000DC732 /* VoogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoogTests.swift; sourceTree = "<group>"; };
+		38DB8A081B527ADA000DC732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38DB89F31B527ADA000DC732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38DB89FE1B527ADA000DC732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DB8A021B527ADA000DC732 /* Voog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38DB89ED1B527ADA000DC732 = {
+			isa = PBXGroup;
+			children = (
+				38DB89F91B527ADA000DC732 /* Voog */,
+				38DB8A051B527ADA000DC732 /* VoogTests */,
+				38DB89F81B527ADA000DC732 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38DB89F81B527ADA000DC732 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38DB89F71B527ADA000DC732 /* Voog.framework */,
+				38DB8A011B527ADA000DC732 /* VoogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38DB89F91B527ADA000DC732 /* Voog */ = {
+			isa = PBXGroup;
+			children = (
+				38DB89FA1B527ADA000DC732 /* Voog.h */,
+				38DB89FC1B527ADA000DC732 /* Info.plist */,
+			);
+			path = Voog;
+			sourceTree = "<group>";
+		};
+		38DB8A051B527ADA000DC732 /* VoogTests */ = {
+			isa = PBXGroup;
+			children = (
+				38DB8A061B527ADA000DC732 /* VoogTests.swift */,
+				38DB8A081B527ADA000DC732 /* Info.plist */,
+			);
+			path = VoogTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38DB89F41B527ADA000DC732 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DB89FB1B527ADA000DC732 /* Voog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38DB89F61B527ADA000DC732 /* Voog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38DB8A0B1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "Voog" */;
+			buildPhases = (
+				38DB89F21B527ADA000DC732 /* Sources */,
+				38DB89F31B527ADA000DC732 /* Frameworks */,
+				38DB89F41B527ADA000DC732 /* Headers */,
+				38DB89F51B527ADA000DC732 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voog;
+			productName = Voog;
+			productReference = 38DB89F71B527ADA000DC732 /* Voog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		38DB8A001B527ADA000DC732 /* VoogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38DB8A0E1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "VoogTests" */;
+			buildPhases = (
+				38DB89FD1B527ADA000DC732 /* Sources */,
+				38DB89FE1B527ADA000DC732 /* Frameworks */,
+				38DB89FF1B527ADA000DC732 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38DB8A041B527ADA000DC732 /* PBXTargetDependency */,
+			);
+			name = VoogTests;
+			productName = VoogTests;
+			productReference = 38DB8A011B527ADA000DC732 /* VoogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38DB89EE1B527ADA000DC732 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Voog;
+				TargetAttributes = {
+					38DB89F61B527ADA000DC732 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					38DB8A001B527ADA000DC732 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 38DB89F11B527ADA000DC732 /* Build configuration list for PBXProject "Voog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 38DB89ED1B527ADA000DC732;
+			productRefGroup = 38DB89F81B527ADA000DC732 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38DB89F61B527ADA000DC732 /* Voog */,
+				38DB8A001B527ADA000DC732 /* VoogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38DB89F51B527ADA000DC732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38DB89FF1B527ADA000DC732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38DB89F21B527ADA000DC732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38DB89FD1B527ADA000DC732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38DB8A071B527ADA000DC732 /* VoogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38DB8A041B527ADA000DC732 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38DB89F61B527ADA000DC732 /* Voog */;
+			targetProxy = 38DB8A031B527ADA000DC732 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		38DB8A091B527ADA000DC732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38DB8A0A1B527ADA000DC732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38DB8A0C1B527ADA000DC732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Voog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.Voog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		38DB8A0D1B527ADA000DC732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Voog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.Voog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		38DB8A0F1B527ADA000DC732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VoogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.VoogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38DB8A101B527ADA000DC732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VoogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voog.VoogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38DB89F11B527ADA000DC732 /* Build configuration list for PBXProject "Voog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38DB8A091B527ADA000DC732 /* Debug */,
+				38DB8A0A1B527ADA000DC732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38DB8A0B1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "Voog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38DB8A0C1B527ADA000DC732 /* Debug */,
+				38DB8A0D1B527ADA000DC732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38DB8A0E1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "VoogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38DB8A0F1B527ADA000DC732 /* Debug */,
+				38DB8A101B527ADA000DC732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38DB89EE1B527ADA000DC732 /* Project object */;
+}
