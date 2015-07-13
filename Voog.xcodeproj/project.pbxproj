@@ -10,6 +10,11 @@
 		38DB89FB1B527ADA000DC732 /* Voog.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DB89FA1B527ADA000DC732 /* Voog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38DB8A021B527ADA000DC732 /* Voog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38DB89F71B527ADA000DC732 /* Voog.framework */; };
 		38DB8A071B527ADA000DC732 /* VoogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB8A061B527ADA000DC732 /* VoogTests.swift */; };
+		38DB8A131B527B26000DC732 /* VoogClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB8A121B527B26000DC732 /* VoogClient.swift */; };
+		38DB8A161B527BBC000DC732 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB8A151B527BBC000DC732 /* Language.swift */; };
+		38DB8A191B5281EE000DC732 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB8A181B5281EE000DC732 /* Layout.swift */; };
+		794C8C524A0CD336D970126F /* Pods_VoogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94E0DEC5257CEB322388AD3 /* Pods_VoogTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C728765E77B806ABDE74797B /* Pods_Voog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E61101AD1D5411CE7D14A6 /* Pods_Voog.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0742BFAB15F9A8DDA021E9FB /* Pods-VoogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoogTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoogTests/Pods-VoogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38DB89F71B527ADA000DC732 /* Voog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DB89FA1B527ADA000DC732 /* Voog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voog.h; sourceTree = "<group>"; };
 		38DB89FC1B527ADA000DC732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DB8A011B527ADA000DC732 /* VoogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DB8A061B527ADA000DC732 /* VoogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoogTests.swift; sourceTree = "<group>"; };
 		38DB8A081B527ADA000DC732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DB8A121B527B26000DC732 /* VoogClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoogClient.swift; sourceTree = "<group>"; };
+		38DB8A151B527BBC000DC732 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		38DB8A181B5281EE000DC732 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		38DB8A1F1B5283EC000DC732 /* SwiftyJSON.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftyJSON.playground; sourceTree = "<group>"; };
+		5DF56617F501147D378C3700 /* Pods-Voog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voog/Pods-Voog.release.xcconfig"; sourceTree = "<group>"; };
+		6C59834AE15B8D642B71E247 /* Pods-Voog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voog/Pods-Voog.debug.xcconfig"; sourceTree = "<group>"; };
+		C5E61101AD1D5411CE7D14A6 /* Pods_Voog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF8285398B528B55FF338E1 /* Pods-VoogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoogTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoogTests/Pods-VoogTests.release.xcconfig"; sourceTree = "<group>"; };
+		E94E0DEC5257CEB322388AD3 /* Pods_VoogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C728765E77B806ABDE74797B /* Pods_Voog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38DB8A021B527ADA000DC732 /* Voog.framework in Frameworks */,
+				794C8C524A0CD336D970126F /* Pods_VoogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +73,8 @@
 				38DB89F91B527ADA000DC732 /* Voog */,
 				38DB8A051B527ADA000DC732 /* VoogTests */,
 				38DB89F81B527ADA000DC732 /* Products */,
+				459D69580A85A650CD5EF89A /* Pods */,
+				9B7D622D80B1737508135270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +90,10 @@
 		38DB89F91B527ADA000DC732 /* Voog */ = {
 			isa = PBXGroup;
 			children = (
-				38DB89FA1B527ADA000DC732 /* Voog.h */,
-				38DB89FC1B527ADA000DC732 /* Info.plist */,
+				38DB8A1E1B5283AD000DC732 /* Playgrounds */,
+				38DB8A111B527AF2000DC732 /* Supporting files */,
+				38DB8A141B527BAD000DC732 /* Voog */,
+				38DB8A171B527CAC000DC732 /* Models */,
 			);
 			path = Voog;
 			sourceTree = "<group>";
@@ -84,6 +105,60 @@
 				38DB8A081B527ADA000DC732 /* Info.plist */,
 			);
 			path = VoogTests;
+			sourceTree = "<group>";
+		};
+		38DB8A111B527AF2000DC732 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				38DB89FA1B527ADA000DC732 /* Voog.h */,
+				38DB89FC1B527ADA000DC732 /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		38DB8A141B527BAD000DC732 /* Voog */ = {
+			isa = PBXGroup;
+			children = (
+				38DB8A121B527B26000DC732 /* VoogClient.swift */,
+			);
+			name = Voog;
+			sourceTree = "<group>";
+		};
+		38DB8A171B527CAC000DC732 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38DB8A151B527BBC000DC732 /* Language.swift */,
+				38DB8A181B5281EE000DC732 /* Layout.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		38DB8A1E1B5283AD000DC732 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				38DB8A1F1B5283EC000DC732 /* SwiftyJSON.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
+		459D69580A85A650CD5EF89A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C59834AE15B8D642B71E247 /* Pods-Voog.debug.xcconfig */,
+				5DF56617F501147D378C3700 /* Pods-Voog.release.xcconfig */,
+				0742BFAB15F9A8DDA021E9FB /* Pods-VoogTests.debug.xcconfig */,
+				CBF8285398B528B55FF338E1 /* Pods-VoogTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B7D622D80B1737508135270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5E61101AD1D5411CE7D14A6 /* Pods_Voog.framework */,
+				E94E0DEC5257CEB322388AD3 /* Pods_VoogTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38DB8A0B1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "Voog" */;
 			buildPhases = (
+				8AC2209F8A26C42DE8BC68D2 /* Check Pods Manifest.lock */,
 				38DB89F21B527ADA000DC732 /* Sources */,
 				38DB89F31B527ADA000DC732 /* Frameworks */,
 				38DB89F41B527ADA000DC732 /* Headers */,
 				38DB89F51B527ADA000DC732 /* Resources */,
+				91C2DFB78692C44F8A187D56 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38DB8A0E1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "VoogTests" */;
 			buildPhases = (
+				751C09A6EDB0CE92B6AFFFD0 /* Check Pods Manifest.lock */,
 				38DB89FD1B527ADA000DC732 /* Sources */,
 				38DB89FE1B527ADA000DC732 /* Frameworks */,
 				38DB89FF1B527ADA000DC732 /* Resources */,
+				32CA8C1E95175977F1F78D8E /* Embed Pods Frameworks */,
+				CB29AD287D1F7BBAEE341CFB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +222,7 @@
 		38DB89EE1B527ADA000DC732 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Voog;
 				TargetAttributes = {
@@ -188,11 +269,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32CA8C1E95175977F1F78D8E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoogTests/Pods-VoogTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		751C09A6EDB0CE92B6AFFFD0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8AC2209F8A26C42DE8BC68D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91C2DFB78692C44F8A187D56 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Voog/Pods-Voog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB29AD287D1F7BBAEE341CFB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoogTests/Pods-VoogTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38DB89F21B527ADA000DC732 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DB8A131B527B26000DC732 /* VoogClient.swift in Sources */,
+				38DB8A161B527BBC000DC732 /* Language.swift in Sources */,
+				38DB8A191B5281EE000DC732 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +463,9 @@
 		};
 		38DB8A0C1B527ADA000DC732 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C59834AE15B8D642B71E247 /* Pods-Voog.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,12 +478,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.voog.Voog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		38DB8A0D1B527ADA000DC732 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF56617F501147D378C3700 /* Pods-Voog.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -337,6 +504,7 @@
 		};
 		38DB8A0F1B527ADA000DC732 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0742BFAB15F9A8DDA021E9FB /* Pods-VoogTests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VoogTests/Info.plist;
@@ -348,6 +516,7 @@
 		};
 		38DB8A101B527ADA000DC732 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF8285398B528B55FF338E1 /* Pods-VoogTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = VoogTests/Info.plist;
@@ -376,6 +545,7 @@
 				38DB8A0D1B527ADA000DC732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38DB8A0E1B527ADA000DC732 /* Build configuration list for PBXNativeTarget "VoogTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +554,7 @@
 				38DB8A101B527ADA000DC732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

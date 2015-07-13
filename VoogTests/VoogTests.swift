@@ -7,12 +7,16 @@
 //
 
 import XCTest
+import Voog
 
 class VoogTests: XCTestCase {
     
+    var client: VoogClient? = nil
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        self.client = VoogClient(host: "priit.voog.computer", apiKey: "bc6feb11c1f953b7db0664e52384a200")
     }
     
     override func tearDown() {
@@ -20,16 +24,26 @@ class VoogTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLanguages() {
+        let expectation = self.expectationWithDescription("Fetch languages")
+        
+        self.client?.languages() {
+            XCTAssertEqual($0.count, 5, "Length")
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(5.0, handler: nil)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
+    func testLayouts() {
+        let expectation = self.expectationWithDescription("Fetch languages")
+        
+        self.client?.layouts() {
+            XCTAssertEqual($0.count, 22, "Layouts count")
+            expectation.fulfill()
         }
+        
+        self.waitForExpectationsWithTimeout(5.0, handler: nil)
     }
     
 }
