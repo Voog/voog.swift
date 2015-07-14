@@ -27,17 +27,21 @@ public class VoogClient {
         request.addValue("Voog Swift Client Library 1.0", forHTTPHeaderField: "User-Agent")
         request.addValue(self.apiKey, forHTTPHeaderField: "X-API-TOKEN")
         
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) in
-            callback(JSON(data: data!))
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) -> Void in
+            if (error != nil) {
+                // callback("", error.localizedDescription)
+            } else {
+                callback(JSON(data: data!))
+            }
         }
+        
+        task!.resume()
     }
     
     public func languages(callback: (Array<Language>) -> Void) {
-        let url = "http://\(self.host)/admin/api/languages"
         var languages = [Language]()
         
-        self.getJSON(url) {
-
+        self.getJSON("http://\(self.host)/admin/api/languages") {
             for (index: _, subJson: json) in $0 {
                 if let language = Language(json: json) {
                     languages.append(language)
@@ -51,18 +55,4 @@ public class VoogClient {
         
     }
     
-    public func layouts(callback: (Array<Layout>) -> Void) {
-        let url = "http://\(self.host)/admin/api/layouts"
-        var layouts = [Layout]()
-        
-        self.getJSON(url) {
-            for (index: _, subJson: json) in $0 {
-                if let layout = Layout(json: json) {
-                    layouts.append(layout)
-                }
-            }
-            
-            callback(layouts)
-        }
-    }
 }

@@ -8,6 +8,7 @@
 
 import XCTest
 import Voog
+import Nocilla
 
 class VoogTests: XCTestCase {
     
@@ -16,34 +17,65 @@ class VoogTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        self.client = VoogClient(host: "priit.voog.computer", apiKey: "bc6feb11c1f953b7db0664e52384a200")
+        LSNocilla.sharedInstance().start()
+        
+        self.client = VoogClient(host: "voog.test", apiKey: "bc6feb11c1f953b7db0664e52384a200")
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        
+        LSNocilla.sharedInstance().stop()
+        LSNocilla.sharedInstance().clearStubs()
+    }
+    
+    func getJSONMock(resource: String) -> String {
+        let fileURL = NSBundle(forClass: self.dynamicType).URLForResource(resource, withExtension: "json")
+        
+        do {
+            return try NSString(contentsOfURL: fileURL!, encoding: NSUTF8StringEncoding) as String
+        } catch {
+            return ""
+        }
     }
     
     func testLanguages() {
         let expectation = self.expectationWithDescription("Fetch languages")
         
+        stubRequest("GET", "http://voog.test/admin/api/languages").andReturn(200).withBody(getJSONMock("languages"))
+        
         self.client?.languages() {
-            XCTAssertEqual($0.count, 5, "Length")
+            XCTAssertEqual($0.count, 2, "Languages count")
             expectation.fulfill()
         }
         
-        self.waitForExpectationsWithTimeout(5.0, handler: nil)
+        self.waitForExpectationsWithTimeout(2.0, handler: nil)
     }
     
     func testLayouts() {
-        let expectation = self.expectationWithDescription("Fetch languages")
+        let expectation = self.expectationWithDescription("Fetch layouts")
+        
+        stubRequest("GET", "http://voog.test/admin/api/layouts").andReturn(200).withBody(getJSONMock("layouts"))
         
         self.client?.layouts() {
-            XCTAssertEqual($0.count, 22, "Layouts count")
+            XCTAssertEqual($0.count, 2, "Layouts count")
             expectation.fulfill()
         }
         
-        self.waitForExpectationsWithTimeout(5.0, handler: nil)
+        self.waitForExpectationsWithTimeout(2.0, handler: nil)
+    }
+    
+    func testLayout() {
+        let expectation = self.expectationWithDescription("Fetch layout")
+        
+        stubRequest("GET", "http://voog.test/admin/api/layouts/2").andReturn(200).withBody(getJSONMock("layout"))
+        
+        self.client?.layout(2) {
+            XCTAssertEqual($0.id, 2, "Layout ID")
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectationsWithTimeout(2.0, handler: nil)
     }
     
 }

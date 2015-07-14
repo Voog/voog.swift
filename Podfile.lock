@@ -1,7 +1,9 @@
 PODS:
+  - Nocilla (0.10.0)
   - SwiftyJSON (2.2.0)
 
 DEPENDENCIES:
+  - Nocilla
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, branch `xcode7`)
 
 EXTERNAL SOURCES:
@@ -15,6 +17,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Nocilla: ae0a2b05f3087b473624ac2b25903695df51246a
   SwiftyJSON: 0b3e6c07af17ff745e77e8e9984097b55c956e5c
 
 COCOAPODS: 0.38.0.beta.2

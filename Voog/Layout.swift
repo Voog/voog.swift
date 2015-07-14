@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public struct Layout {
     
-    var id: Int
+    public var id: Int
     
     var title: String
     
@@ -31,7 +31,7 @@ internal extension Layout {
     init?(json: JSON) {
         if let identifier = json["id"].int {
             self.init(
-                id: identifier,
+                `id`: identifier,
                 title: json["title"].stringValue,
                 body: json["body"].stringValue,
                 component: json["component"].boolValue,
@@ -44,4 +44,30 @@ internal extension Layout {
         }
         
     }
+}
+
+public extension VoogClient {
+    
+    public func layouts(callback: (Array<Layout>) -> Void) {
+        var layouts = [Layout]()
+        
+        self.getJSON("http://\(self.host)/admin/api/layouts") {
+            for (index: _, subJson: json) in $0 {
+                if let layout = Layout(json: json) {
+                    layouts.append(layout)
+                }
+            }
+            
+            callback(layouts)
+        }
+    }
+    
+    public func layout(id: Int, callback: (Layout) -> Void) {
+        self.getJSON("http://\(self.host)/admin/api/layouts/\(id)") {
+            if let layout = Layout(json: $0) {
+                callback(layout)
+            }
+        }
+    }
+    
 }
